@@ -1,0 +1,354 @@
+Documento 1 — Contexto Fantasía para IA
+Este documento está pensado para dárselo a una IA y que entienda el proyecto SIN usar términos reales de logística, exportación o embarques.
+Sistema de Gestión de Expediciones Interreino
+Descripción General
+El sistema administra expediciones comerciales entre distintos reinos.
+Cada expedición representa el traslado de reliquias, materiales o fragmentos desde una fortaleza principal hacia distintos destinos.
+El objetivo del sistema es:
+organizar expediciones
+consolidarlas en caravanas
+asignar bestias de carga
+coordinar casas mercantes y mensajeros imperiales
+monitorear tiempos de llegada
+controlar métricas de traslado
+validar restricciones logísticas
+medir desempeño de entrega
+El sistema tiene reglas complejas de consolidación y planificación.
+Conceptos Principales
+Expedición
+La expedición es la unidad principal del sistema.
+Cada expedición contiene información como:
+código de misión
+alianza destino
+reino destino
+santuario de entrega
+cantidad de fragmentos
+pacto comercial
+tipo de expedición
+métricas de traslado
+fechas profetizadas y reales
+estado ritual
+comentarios de desviación
+peso y volumen
+Una expedición puede viajar sola o junto a otras dentro de una caravana.
+Pergamino de Ruta
+El pergamino de ruta agrupa expediciones compatibles.
+Para que varias expediciones puedan pertenecer al mismo pergamino deben compartir:
+mismo reino
+misma alianza
+mismo santuario destino
+Si alguno de esos elementos cambia, debe generarse un nuevo pergamino.
+El pergamino representa agrupación documental y operativa.
+Caravana
+La caravana representa la consolidación física de expediciones.
+Una caravana puede contener múltiples expediciones o múltiples pergaminos de ruta.
+La caravana posee:
+referencia única
+estado
+fecha ritual
+clan transportista
+bestia asignada
+Las caravanas son preparadas por estrategas logísticos.
+Bestias de Carga
+Las bestias representan unidades de transporte.
+Existen distintos tipos:
+bestia ligera
+bestia pesada
+titán terrestre
+Cada bestia tiene:
+dimensiones
+capacidad máxima
+peso soportado
+reglas especiales de acomodo
+Las expediciones pueden viajar estibadas o no estibadas dependiendo del pacto comercial, tipo de material o preferencias de la alianza.
+Clanes Transportistas
+Los clanes transportistas proporcionan bestias de carga.
+Un clan puede tener múltiples bestias disponibles.
+Los estrategas seleccionan qué clan utilizar dependiendo de:
+capacidad
+destino
+tipo de expedición
+disponibilidad
+restricciones operativas
+Casas Mercantes
+Las casas mercantes coordinan traslados entre portales fronterizos.
+No necesariamente transportan directamente las expediciones.
+Se encargan principalmente de:
+coordinación interreino
+cruces fronterizos
+documentación
+logística avanzada
+Mensajeros Imperiales
+Los mensajeros imperiales manejan expediciones pequeñas o rápidas.
+Ellos mismos pueden:
+recoger expediciones
+trasladarlas
+cruzar portales
+entregar en destino final
+No requieren caravanas intermedias.
+Bastión Intermedio
+El bastión es un almacén o punto temporal de resguardo.
+Las expediciones pueden:
+salir de la fortaleza principal
+llegar al bastión
+permanecer resguardadas
+salir posteriormente hacia portal fronterizo o destino final
+El flujo no siempre es lineal.
+Flujo General
+Flujo con Casa Mercante
+Plain text
+Fortaleza Principal
+    ↓
+Caravana
+    ↓
+Bastión Intermedio
+    ↓
+Portal Fronterizo
+    ↓
+Casa Mercante
+    ↓
+Reino Destino
+Flujo con Mensajero Imperial
+Plain text
+Fortaleza Principal
+    ↓
+Mensajero Imperial
+    ↓
+Portal Fronterizo o Reino Destino
+Planeación Estratégica
+El sistema debe considerar:
+compatibilidad entre expediciones
+consolidación por reino
+consolidación por alianza
+consolidación por santuario destino
+capacidad de bestias
+volumen y peso
+acomodo estibado o no estibado
+reglas especiales por pacto comercial
+restricciones operativas
+tipo de expedición
+rutas de salida
+Métricas Importantes
+El sistema mide desempeño mediante:
+llegada temprana
+llegada puntual
+llegada tardía
+tiempo total de traslado
+desviaciones
+incidencias
+volumen movilizado
+carga total
+nivel de corrupción ambiental
+Estados Ritualísticos
+Ejemplos de estados:
+En preparación
+Consolidado
+Asignado a caravana
+En tránsito
+En bastión
+Cruzando portal
+Liberado
+Entregado
+Retrasado
+Desviado
+Consideraciones Técnicas
+El sistema es altamente operativo y posee múltiples reglas de negocio dinámicas.
+La lógica principal del sistema se centra en:
+consolidación
+planificación
+validaciones
+trazabilidad
+métricas
+seguimiento temporal
+El objetivo principal es mantener control completo sobre el ciclo de vida de las expediciones.
+Documento 2 — Diccionario REAL → FANTASÍA
+Tablas
+REAL
+FANTASÍA
+shipment
+expedicion
+freight_load
+caravana
+guide
+pergamino_ruta
+transport
+bestia
+carrier
+clan_transportista
+forwarder
+casa_mercante
+courier
+mensajero_imperial
+incoterm
+pacto_comercial
+incotermdetail
+detalle_pacto
+Campos Principales
+REAL
+FANTASÍA
+id_shipment
+id_expedicion
+shippingDate
+fecha_ritual
+orderNumber
+codigo_mision
+customer
+alianza
+country
+reino
+addressShipping
+santuario_destino
+deliveryPoint
+punto_entrega
+artwork
+diseno_arcano
+quantity
+fragmentos
+comment
+notas_misticas
+package
+contenedores_sellados
+status
+estado_ritual
+shipmentType
+clase_expedicion
+shipmentSystem
+sistema_origen
+metrics
+metricas_viaje
+productType
+tipo_reliquia
+tariffType
+tributo_comercial
+departureAirSea
+portal_salida
+route
+senda_comercial
+airline
+orden_aerea
+etd
+salida_profetizada
+eta
+llegada_profetizada
+ata
+llegada_real
+pod
+llegada_santuario
+cutoff
+cierre_portal
+mawb
+sello_aereo
+BL
+sello_maritimo
+memberName
+guardian_asignado
+invoiceNumber
+pergamino_cobro
+invoiceDate
+fecha_cobro
+billingSite
+fortaleza_cobro
+mainTransportMode
+tipo_travesia
+pickupLocation
+fortaleza_origen
+destinationCountry
+reino_destino
+destinationTown
+villa_destino
+pickupDate
+fecha_recoleccion
+totalTransitTime
+tiempo_travesia
+numberOfPieces
+numero_contenedores
+grossWeight
+carga_total
+taxableWeight
+carga_tributable
+volume
+volumen_arcano
+currency
+moneda_reino
+totalAmount
+tributo_total
+km
+distancia_reinos
+co2
+nivel_corrupcion
+Guide / Pergamino
+REAL
+FANTASÍA
+guide
+pergamino_ruta
+id_guide
+id_pergamino
+name
+nombre_pergamino
+Freight Load / Caravana
+REAL
+FANTASÍA
+reference
+referencia_caravana
+fecha_hora
+fecha_convocatoria
+national_expo
+region_comercial
+Transport / Bestia
+REAL
+FANTASÍA
+transport
+bestia
+type
+clase_bestia
+capacitykg
+capacidad_carga
+Relaciones
+REAL
+FANTASÍA
+Shipment pertenece a Guide
+Expedición pertenece a Pergamino
+Guide agrupa Shipments
+Pergamino agrupa Expediciones
+FreightLoad contiene Shipments
+Caravana contiene Expediciones
+Carrier tiene Transport
+Clan posee Bestias
+Forwarder coordina Shipment
+Casa Mercante coordina Expedición
+Estados
+REAL
+FANTASÍA
+Pending
+En preparación
+Assigned
+Asignado
+In Transit
+Cruzando reinos
+Delivered
+Reliquia entregada
+Delayed
+Distorsión temporal
+Released
+Bendición completada
+Cancelled
+Ritual cancelado
+Operaciones
+REAL
+FANTASÍA
+Crear embarque
+Registrar expedición
+Crear carga
+Formar caravana
+Asignar transporte
+Invocar bestia
+Enviar a aduana
+Cruzar portal fronterizo
+Consolidar órdenes
+Unificar expediciones
+Liberar carga
+Liberar caravana
+Validar shipment
+Verificar ritual
+Tracking
+Rastreo arcano
