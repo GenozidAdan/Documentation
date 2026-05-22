@@ -1,0 +1,93 @@
+Instrucciones del Proyecto Frontend SMC
+
+Este proyecto utilizará React + Vite como base principal del frontend.
+
+Stack y librerías principales
+
+React + Vite
+
+Axios para consumo de APIs
+
+React Router DOM para navegación
+
+SweetAlert2 para alertas y confirmaciones simples
+
+Tailwind CSS para estilos
+
+Uso de hooks funcionales modernos
+
+Convenciones generales
+
+Priorizar código limpio, escalable y mantenible.
+
+Evitar duplicación de lógica.
+
+Separar responsabilidades correctamente.
+
+Utilizar nombres descriptivos en español o inglés de forma consistente.
+
+Explicar brevemente decisiones técnicas importantes antes de generar cambios grandes.
+
+Estructura esperada
+
+components/
+
+pages/
+
+services/
+
+hooks/
+
+utils/
+
+layouts/
+
+routes/
+
+Consumo de APIs
+
+Todas las llamadas HTTP deben centralizarse usando Axios.
+
+Manejar errores de API correctamente.
+
+Evitar lógica HTTP directamente dentro de componentes grandes cuando sea posible.
+
+Alertas y UX
+
+Usar SweetAlert2 para confirmaciones, errores y mensajes rápidos.
+
+Si una situación requiere una solución más flexible o personalizada, sugerir crear un sistema de alertas propio antes de implementarlo.
+
+Dependencias
+
+IMPORTANTE:Antes de instalar o sugerir una nueva dependencia:
+
+Explicar por qué sería útil.
+
+Explicar beneficios y posibles desventajas.
+
+Sugerir primero si el problema puede resolverse con herramientas ya existentes.
+
+Preguntar confirmación antes de generar código que dependa de nuevas librerías.
+
+Generación de código
+
+No generar código excesivamente complejo si existe una solución más simple y mantenible.
+
+Priorizar componentes reutilizables.
+
+Evitar sobreingeniería.
+
+Mantener consistencia visual y estructural.
+
+Comentar únicamente cuando aporte valor real.
+
+Estilo de respuesta esperado
+
+Explicar primero el enfoque.
+
+Luego mostrar el código.
+
+Si existen varias alternativas, mencionar cuál es la recomendada y por qué.
+
+Detectar posibles problemas de escalabilidad o mantenimiento.
